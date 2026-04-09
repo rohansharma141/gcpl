@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Globus Certifications Pvt Ltd — ISO & Compliance Certification Body</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0a1628;--navy2:#0d1f3c;--navy3:#162447;
+  --gold:#c9972c;--gold2:#e8b84b;--gold3:#f5d080;
+  --cream:#f8f5ef;--cream2:#ede9e0;
+  --text:#1a2540;--text2:#4a5568;--text3:#718096;
+  --white:#ffffff;--green:#1a6b4a;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Cormorant Garamond',serif}
+a{text-decoration:none}
+button{cursor:pointer}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#0a1628}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,22,40,0.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,151,44,0.18)}
+.nav-inner{max-width:1260px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo-wrap{display:flex;align-items:center;gap:13px;cursor:pointer;flex-shrink:0}
+.logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:7px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:20px;color:var(--navy);flex-shrink:0}
+.logo-text{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700;color:var(--white);line-height:1}
+.logo-sub{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:2.5px;color:rgba(201,151,44,0.7);text-transform:uppercase;display:block;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:26px}
+.nav-links a{color:rgba(255,255,255,0.75);font-size:13px;letter-spacing:0.2px;transition:color .2s;cursor:pointer;white-space:nowrap}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 22px!important;border-radius:5px!important;font-weight:600!important;font-size:12px!important;letter-spacing:.8px!important;text-transform:uppercase;transition:background .2s!important}
+.nav-cta:hover{background:var(--gold2)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--navy2);border-bottom:1px solid rgba(201,151,44,0.15);padding:20px 5%;z-index:999;flex-direction:column;gap:16px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:rgba(255,255,255,0.8);font-size:15px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06);cursor:pointer}
+
+/* ── HERO ── */
+.hero{min-height:100vh;background:var(--navy);position:relative;display:flex;align-items:center;overflow:hidden;padding-top:70px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 65% 55% at 72% 50%,rgba(201,151,44,0.09) 0%,transparent 65%),radial-gradient(ellipse 35% 40% at 15% 75%,rgba(26,106,74,0.11) 0%,transparent 55%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,151,44,0.045) 1px,transparent 1px),linear-gradient(90deg,rgba(201,151,44,0.045) 1px,transparent 1px);background-size:64px 64px;animation:gridDrift 22s linear infinite}
+@keyframes gridDrift{0%{transform:translateY(0)}100%{transform:translateY(64px)}}
+.hero-content{position:relative;z-index:2;max-width:1260px;margin:0 auto;padding:60px 5%;display:grid;grid-template-columns:1.25fr 0.75fr;gap:70px;align-items:center;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(201,151,44,0.11);border:1px solid rgba(201,151,44,0.28);border-radius:22px;padding:7px 18px;margin-bottom:30px}
+.hero-badge-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulseAnim 2.2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulseAnim{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
+.hero-badge span{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1.hero-title{font-size:clamp(36px,5.5vw,72px);font-weight:700;color:var(--white);line-height:1.02;margin-bottom:22px}
+h1.hero-title em{color:var(--gold);font-style:normal}
+.hero-desc{font-size:15.5px;color:rgba(255,255,255,0.6);line-height:1.85;margin-bottom:38px;max-width:500px;font-weight:300}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--navy);padding:14px 34px;border-radius:5px;font-weight:700;font-size:13px;letter-spacing:.5px;border:none;cursor:pointer;transition:all .22s;display:inline-flex;align-items:center;gap:7px;font-family:'DM Sans',sans-serif}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:var(--white);padding:14px 30px;border-radius:5px;font-weight:500;font-size:13px;border:1px solid rgba(255,255,255,0.22);cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(201,151,44,0.14);border:1px solid rgba(201,151,44,0.14);border-radius:9px;margin-top:44px;overflow:hidden}
+.hero-stat{background:#0a1628;padding:22px 16px;text-align:center}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:5px}
+/* hero right panel */
+.hero-right{}
+.cert-visual{background:rgba(255,255,255,0.033);border:1px solid rgba(201,151,44,0.2);border-radius:13px;padding:28px}
+.cert-visual-title{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:600;opacity:.8}
+.cert-list{display:flex;flex-direction:column;gap:9px}
+.cert-item{display:flex;align-items:center;gap:13px;background:rgba(255,255,255,0.038);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:13px 14px;cursor:pointer;transition:all .22s}
+.cert-item:hover{border-color:rgba(201,151,44,0.4);background:rgba(201,151,44,0.07)}
+.cert-item-icon{width:38px;height:38px;border-radius:7px;background:rgba(201,151,44,0.14);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.cert-item-name{font-size:13px;font-weight:600;color:var(--white);line-height:1}
+.cert-item-desc{font-size:11px;color:rgba(255,255,255,0.42);margin-top:2px}
+.cert-item-arrow{margin-left:auto;color:var(--gold);font-size:15px;opacity:.55}
+.accred-bar{margin-top:18px;padding:13px 16px;background:rgba(46,204,113,0.1);border:1px solid rgba(46,204,113,0.22);border-radius:7px;display:flex;align-items:center;gap:11px}
+.accred-dot{width:8px;height:8px;border-radius:50%;background:#2ecc71;flex-shrink:0;animation:pulseAnim 2s infinite}
+.accred-text{font-size:11px;color:rgba(255,255,255,0.65);line-height:1.55}
+.accred-text strong{color:#2ecc71;font-weight:600}
+
+/* ── TRUST BAR ── */
+.trust-bar{background:var(--cream);border-top:1px solid var(--cream2);border-bottom:1px solid var(--cream2);padding:22px 5%}
+.trust-inner{max-width:1260px;margin:0 auto;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.trust-label{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--text3);flex-shrink:0;font-weight:500}
+.trust-divider{width:1px;height:22px;background:var(--cream2);flex-shrink:0}
+.trust-logos{display:flex;align-items:center;gap:34px;flex-wrap:wrap}
+.trust-logo{font-size:12px;font-weight:600;color:var(--text2);letter-spacing:.3px;opacity:.65;white-space:nowrap}
+
+/* ── SECTION COMMONS ── */
+section{padding:96px 5%}
+.section-inner{max-width:1260px;margin:0 auto}
+.section-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600;font-family:'DM Sans',sans-serif}
+.section-title{font-size:clamp(30px,4vw,52px);font-weight:700;line-height:1.08;margin-bottom:16px}
+.section-title em{color:var(--gold);font-style:normal}
+.section-desc{font-size:16px;line-height:1.82;font-weight:300;max-width:560px}
+
+/* ── SERVICES ── */
+#services{background:var(--navy)}
+#services .section-title{color:var(--white)}
+#services .section-desc{color:rgba(255,255,255,.52)}
+.services-header{margin-bottom:50px}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
+.service-card{background:rgba(255,255,255,.033);border:1px solid rgba(201,151,44,.14);border-radius:11px;padding:34px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transition:transform .3s;transform-origin:left}
+.service-card:hover{border-color:rgba(201,151,44,.38);background:rgba(255,255,255,.052);transform:translateY(-3px)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{font-size:30px;margin-bottom:20px}
+.service-name{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:700;color:var(--white);margin-bottom:11px;line-height:1.1}
+.service-desc{font-size:13px;color:rgba(255,255,255,.48);line-height:1.82}
+.service-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+.service-tag{background:rgba(201,151,44,.1);border:1px solid rgba(201,151,44,.2);color:var(--gold);font-size:10px;padding:4px 11px;border-radius:12px;letter-spacing:.4px;font-weight:500}
+
+/* ── CERTIFICATIONS ── */
+#certifications{background:var(--cream)}
+.certs-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px;flex-wrap:wrap;gap:20px}
+.cert-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+.cert-tab{padding:9px 22px;border-radius:22px;font-size:12px;font-weight:600;letter-spacing:.4px;cursor:pointer;border:1px solid var(--cream2);background:var(--white);color:var(--text2);transition:all .2s;font-family:'DM Sans',sans-serif}
+.cert-tab.active{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.cert-card{background:var(--white);border:1px solid var(--cream2);border-radius:11px;padding:26px;cursor:pointer;transition:all .22s;position:relative}
+.cert-card:hover{box-shadow:0 10px 35px rgba(10,22,40,.11);transform:translateY(-2px);border-color:var(--gold)}
+.cert-card-code{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.cert-card-name{font-size:12px;color:var(--text2);line-height:1.55;margin-bottom:18px}
+.cert-card-industries{display:flex;gap:4px;flex-wrap:wrap}
+.cert-card-ind{font-size:10px;padding:2px 9px;border-radius:10px;background:rgba(201,151,44,.1);color:#8a5e0a;border:1px solid rgba(201,151,44,.2);font-weight:500}
+.cert-card-time{position:absolute;top:22px;right:18px;font-size:10px;color:var(--text3);text-align:right;line-height:1.4}
+.cert-card-time strong{display:block;font-size:13px;color:var(--text);font-weight:600}
+
+/* ── PROCESS ── */
+#process{background:var(--white)}
+#process .section-desc{color:var(--text2)}
+.process-wrap{margin-top:54px}
+.process-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.process-connector{position:absolute;top:39px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.25}
+.process-step{text-align:center;padding:0 12px 0;position:relative;z-index:2}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--gold);color:var(--navy);font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 4px 18px rgba(201,151,44,.3)}
+.step-name{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--text);margin-bottom:8px}
+.step-desc{font-size:12px;color:var(--text2);line-height:1.72}
+.step-days{display:inline-block;margin-top:11px;font-size:10px;color:var(--gold);font-weight:700;letter-spacing:1.2px;background:rgba(201,151,44,.1);padding:3px 9px;border-radius:10px}
+
+/* ── GLOBAL ── */
+#global{background:var(--navy)}
+#global .section-title{color:var(--white)}
+#global .section-desc{color:rgba(255,255,255,.52)}
+.globe-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.regions-list{display:flex;flex-direction:column;gap:14px;margin-top:38px}
+.region-item{display:flex;align-items:center;gap:16px;padding:17px 20px;background:rgba(255,255,255,.038);border:1px solid rgba(255,255,255,.075);border-radius:9px;cursor:pointer;transition:all .22s}
+.region-item:hover{border-color:rgba(201,151,44,.4);background:rgba(201,151,44,.05)}
+.region-flag{font-size:24px;width:38px;text-align:center}
+.region-info{flex:1}
+.region-name{font-size:14px;font-weight:600;color:var(--white);line-height:1}
+.region-detail{font-size:11px;color:rgba(255,255,255,.4);margin-top:3px}
+.region-count{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--gold)}
+.globe-visual-wrap{display:flex;align-items:center;justify-content:center;position:relative}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:var(--cream)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;margin-top:50px}
+.testimonial-card{background:var(--white);border:1px solid var(--cream2);border-radius:11px;padding:30px;transition:all .22s}
+.testimonial-card:hover{box-shadow:0 10px 35px rgba(10,22,40,.09)}
+.t-stars{color:var(--gold);font-size:14px;margin-bottom:16px;letter-spacing:2px}
+.t-quote{font-family:'Cormorant Garamond',serif;font-size:18.5px;font-weight:500;color:var(--text);line-height:1.62;margin-bottom:24px;font-style:italic}
+.t-quote::before{content:'\201C';font-size:52px;color:var(--gold);line-height:0;vertical-align:-22px;margin-right:2px;font-family:'Cormorant Garamond',serif}
+.t-author{display:flex;align-items:center;gap:13px}
+.t-avatar{width:44px;height:44px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:700;color:var(--gold);flex-shrink:0}
+.t-name{font-size:13px;font-weight:600;color:var(--text);line-height:1}
+.t-company{font-size:11px;color:var(--text3);margin-top:3px}
+.t-cert{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.8px;padding:4px 11px;background:rgba(201,151,44,.1);color:#8a5e0a;border-radius:11px;border:1px solid rgba(201,151,44,.2);white-space:nowrap}
+.stats-row{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap;margin-top:52px;padding-top:52px;border-top:1px solid var(--cream2)}
+.stat-big{text-align:center}
+.stat-big-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;color:var(--navy);line-height:1}
+.stat-big-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-top:5px}
+.stat-vline{width:1px;height:56px;background:var(--cream2)}
+
+/* ── AI CHAT ── */
+#ai-advisor{background:var(--navy2);border-top:1px solid rgba(201,151,44,.09);border-bottom:1px solid rgba(201,151,44,.09)}
+.ai-inner{max-width:880px;margin:0 auto}
+.ai-header{text-align:center;margin-bottom:44px}
+.ai-header .section-title{color:var(--white)}
+.ai-header .section-desc{color:rgba(255,255,255,.52);margin:0 auto}
+.chat-container{background:rgba(255,255,255,.028);border:1px solid rgba(201,151,44,.2);border-radius:13px;overflow:hidden}
+.chat-topbar{background:rgba(201,151,44,.09);border-bottom:1px solid rgba(201,151,44,.14);padding:16px 24px;display:flex;align-items:center;gap:12px}
+.chat-live-dot{width:9px;height:9px;border-radius:50%;background:#2ecc71;animation:pulseAnim 2s infinite;flex-shrink:0}
+.chat-label{font-size:13.5px;font-weight:600;color:var(--white)}
+.chat-sublabel{font-size:11px;color:rgba(255,255,255,.38);margin-left:auto}
+.chat-messages{height:330px;overflow-y:auto;padding:24px;display:flex;flex-direction:column;gap:14px}
+.chat-messages::-webkit-scrollbar{width:4px}
+.chat-messages::-webkit-scrollbar-thumb{background:rgba(201,151,44,.3);border-radius:2px}
+.msg{max-width:84%;padding:13px 17px;border-radius:11px;font-size:13.5px;line-height:1.72;animation:fadeUpMsg .28s ease}
+@keyframes fadeUpMsg{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.msg.ai{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.82);align-self:flex-start;border-radius:4px 11px 11px 11px}
+.msg.user{background:rgba(201,151,44,.14);border:1px solid rgba(201,151,44,.24);color:rgba(255,255,255,.92);align-self:flex-end;border-radius:11px 4px 11px 11px}
+.msg strong{color:var(--gold);font-weight:600}
+.msg ul{padding-left:18px;margin-top:7px}
+.msg li{margin-bottom:4px}
+.msg p{margin-top:7px}
+.typing-indicator{display:flex;gap:5px;align-items:center;padding:13px 17px;align-self:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:4px 11px 11px 11px}
+.t-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.38);animation:tBounce 1.2s infinite}
+.t-dot:nth-child(2){animation-delay:.2s}
+.t-dot:nth-child(3){animation-delay:.4s}
+@keyframes tBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.quick-btns{display:flex;gap:8px;flex-wrap:wrap;padding:14px 22px;border-top:1px solid rgba(255,255,255,.05)}
+.quick-btn{font-size:11.5px;padding:7px 14px;border-radius:15px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.62);cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;white-space:nowrap}
+.quick-btn:hover{border-color:rgba(201,151,44,.4);color:var(--gold);background:rgba(201,151,44,.07)}
+.chat-input-row{display:flex;gap:10px;padding:16px 22px;border-top:1px solid rgba(255,255,255,.06)}
+.chat-input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);border-radius:8px;padding:12px 16px;color:var(--white);font-size:13px;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s}
+.chat-input:focus{border-color:rgba(201,151,44,.42)}
+.chat-input::placeholder{color:rgba(255,255,255,.28)}
+.chat-send{background:var(--gold);color:var(--navy);border:none;border-radius:8px;padding:12px 22px;font-size:12px;font-weight:700;letter-spacing:.4px;transition:all .2s;font-family:'DM Sans',sans-serif;flex-shrink:0}
+.chat-send:hover{background:var(--gold2)}
+
+/* ── LEAD / CONTACT ── */
+#contact{background:linear-gradient(148deg,var(--navy) 0%,var(--navy3) 100%);position:relative;overflow:hidden}
+#contact::before{content:'';position:absolute;top:-120px;right:-120px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(201,151,44,.09);pointer-events:none}
+#contact::after{content:'';position:absolute;bottom:-160px;left:-90px;width:320px;height:320px;border-radius:50%;border:1px solid rgba(201,151,44,.06);pointer-events:none}
+.lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start;position:relative;z-index:2}
+.lead-left .section-title{color:var(--white)}
+.lead-left .section-desc{color:rgba(255,255,255,.52)}
+.lead-perks{margin-top:34px;display:flex;flex-direction:column;gap:16px}
+.lead-perk{display:flex;align-items:flex-start;gap:14px}
+.perk-icon{width:32px;height:32px;border-radius:7px;background:rgba(201,151,44,.14);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;margin-top:1px}
+.perk-text{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.65}
+.perk-text strong{color:var(--white);font-weight:600;display:block;margin-bottom:1px}
+.contact-form{background:rgba(255,255,255,.038);border:1px solid rgba(201,151,44,.18);border-radius:13px;padding:38px}
+.form-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--white);margin-bottom:5px}
+.form-subtitle{font-size:12px;color:rgba(255,255,255,.38);margin-bottom:30px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.form-group label{font-size:10.5px;letter-spacing:.8px;color:rgba(255,255,255,.48);text-transform:uppercase;font-weight:600}
+.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.11);border-radius:7px;padding:12px 14px;color:var(--white);font-size:13px;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .22s;width:100%}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(201,151,44,.5)}
+.form-group select option{background:#0d1f3c;color:var(--white)}
+.form-group textarea{resize:vertical;min-height:82px}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.25)}
+.form-submit{width:100%;background:var(--gold);color:var(--navy);padding:16px;border-radius:7px;font-size:14px;font-weight:700;letter-spacing:1px;border:none;cursor:pointer;margin-top:10px;transition:all .22s;text-transform:uppercase;font-family:'DM Sans',sans-serif}
+.form-submit:hover{background:var(--gold2);transform:translateY(-1px)}
+.form-success{display:none;text-align:center;padding:48px 20px}
+.success-icon{font-size:52px;margin-bottom:18px}
+.success-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--gold);margin-bottom:10px}
+.success-text{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.75}
+.success-text strong{color:var(--white)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);border-top:1px solid rgba(201,151,44,.1);padding:70px 5% 32px}
+.footer-inner{max-width:1260px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;margin-bottom:56px}
+.footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--white);display:block;margin-bottom:12px}
+.footer-desc{font-size:12px;color:rgba(255,255,255,.38);line-height:1.85;margin-bottom:22px;max-width:245px}
+.footer-accred-badge{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;background:rgba(201,151,44,.08);border:1px solid rgba(201,151,44,.2);border-radius:7px}
+.footer-accred-badge span{font-size:11px;color:var(--gold);font-weight:600}
+.footer-col h4{font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:18px;font-weight:600}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:12.5px;color:rgba(255,255,255,.52);cursor:pointer;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.28)}
+.footer-bottom-links{display:flex;gap:22px}
+.footer-bottom-links a{font-size:11px;color:rgba(255,255,255,.28);cursor:pointer;transition:color .2s}
+.footer-bottom-links a:hover{color:var(--gold)}
+
+/* ── FLOATING ELEMENTS ── */
+.float-cta{position:fixed;bottom:30px;right:30px;z-index:998;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.float-chat-btn{background:var(--gold);color:var(--navy);border:none;border-radius:50%;width:58px;height:58px;font-size:22px;box-shadow:0 5px 22px rgba(201,151,44,.42);transition:all .22s;display:flex;align-items:center;justify-content:center}
+.float-chat-btn:hover{transform:scale(1.09);box-shadow:0 7px 28px rgba(201,151,44,.52)}
+.float-tooltip{background:var(--navy);color:var(--gold);font-size:11px;padding:5px 13px;border-radius:22px;border:1px solid rgba(201,151,44,.28);font-weight:600;white-space:nowrap;animation:tooltipFloat 3.5s ease-in-out infinite}
+@keyframes tooltipFloat{0%,100%{opacity:.7}50%{opacity:1}}
+.whatsapp-fab{position:fixed;bottom:30px;left:30px;z-index:998;background:#25D366;color:#fff;border:none;border-radius:50px;padding:13px 22px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:9px;box-shadow:0 5px 22px rgba(37,211,102,.3);transition:all .22s;font-family:'DM Sans',sans-serif}
+.whatsapp-fab:hover{transform:translateY(-2px);box-shadow:0 7px 28px rgba(37,211,102,.42)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-content{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .globe-grid{grid-template-columns:1fr}
+  .globe-visual-wrap{display:none}
+  .lead-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .process-steps{grid-template-columns:repeat(3,1fr);gap:30px}
+  .process-connector{display:none}
+  .process-step:not(:last-child)::after{display:none}
+}
+@media(max-width:768px){
+  nav .nav-links{display:none}
+  .hamburger{display:flex}
+  section{padding:72px 5%}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+  .form-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:repeat(2,1fr)}
+  .stats-row{gap:24px}
+  .stat-vline{display:none}
+  .float-cta{bottom:20px;right:20px}
+  .whatsapp-fab{bottom:20px;left:20px;padding:11px 16px;font-size:12px}
+}
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:1fr;gap:1px}
+  .process-steps{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo-wrap" onclick="scrollTo({top:0,behavior:'smooth'})">
+      <div class="logo-icon">G</div>
+      <div>
+        <span class="logo-text">Globus Certifications</span>
+        <span class="logo-sub">Pvt. Ltd. &mdash; Est. 2009</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a onclick="scroll2('services')">Services</a>
+      <a onclick="scroll2('certifications')">Standards</a>
+      <a onclick="scroll2('process')">How It Works</a>
+      <a onclick="scroll2('global')">Global Reach</a>
+      <a onclick="scroll2('testimonials')">Clients</a>
+      <a onclick="scroll2('ai-advisor')">AI Advisor</a>
+      <a class="nav-cta" onclick="scroll2('contact')">Get Certified &rarr;</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="scroll2('services');toggleMenu()">Services</a>
+  <a onclick="scroll2('certifications');toggleMenu()">Standards</a>
+  <a onclick="scroll2('process');toggleMenu()">How It Works</a>
+  <a onclick="scroll2('global');toggleMenu()">Global Reach</a>
+  <a onclick="scroll2('ai-advisor');toggleMenu()">AI Advisor</a>
+  <a onclick="scroll2('contact');toggleMenu()">Get Certified &rarr;</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge"><div class="hero-badge-dot"></div><span>UAF Accredited &middot; IAF Member Body &middot; 30+ Countries</span></div>
+      <h1 class="hero-title">Your Global<br>Compliance &amp;<br><em>Certification Partner</em></h1>
+      <p class="hero-desc">ISO certifications, compliance audits and professional training for organisations in the Gulf, Europe, the Americas and beyond. 14+ years of independent, impartial, internationally recognised certification.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="scroll2('contact')">Get a Free Consultation &rarr;</button>
+        <button class="btn-secondary" onclick="scroll2('certifications')">Explore Standards</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat-num" id="c1">0</div><div class="hero-stat-label">Certified Clients</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" id="c2">0</div><div class="hero-stat-label">Countries Served</div></div>
+        <div class="hero-stat"><div class="hero-stat-num" id="c3">0</div><div class="hero-stat-label">Years Experience</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="cert-visual">
+        <div class="cert-visual-title">Popular Certifications</div>
+        <div class="cert-list">
+          <div class="cert-item" onclick="scroll2('contact')"><div class="cert-item-icon">🏆</div><div><div class="cert-item-name">ISO 9001:2015</div><div class="cert-item-desc">Quality Management System</div></div><div class="cert-item-arrow">&#8594;</div></div>
+          <div class="cert-item" onclick="scroll2('contact')"><div class="cert-item-icon">🌿</div><div><div class="cert-item-name">ISO 14001:2015</div><div class="cert-item-desc">Environmental Management</div></div><div class="cert-item-arrow">&#8594;</div></div>
+          <div class="cert-item" onclick="scroll2('contact')"><div class="cert-item-icon">🔒</div><div><div class="cert-item-name">ISO 27001:2022</div><div class="cert-item-desc">Information Security</div></div><div class="cert-item-arrow">&#8594;</div></div>
+          <div class="cert-item" onclick="scroll2('contact')"><div class="cert-item-icon">⚕️</div><div><div class="cert-item-name">ISO 45001:2018</div><div class="cert-item-desc">Occupational Health &amp; Safety</div></div><div class="cert-item-arrow">&#8594;</div></div>
+          <div class="cert-item" onclick="scroll2('contact')"><div class="cert-item-icon">🛡️</div><div><div class="cert-item-name">SOC 2 / HIPAA</div><div class="cert-item-desc">Cybersecurity Compliance</div></div><div class="cert-item-arrow">&#8594;</div></div>
+        </div>
+        <div class="accred-bar">
+          <div class="accred-dot"></div>
+          <div class="accred-text"><strong>UAF Accredited &middot; IAF Recognised</strong> &mdash; Certificates valid in 100+ countries under the IAF MLA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-label">Recognised by</div>
+    <div class="trust-divider"></div>
+    <div class="trust-logos">
+      <div class="trust-logo">UAF &mdash; United Accreditation Foundation</div>
+      <div class="trust-logo">IAF &mdash; International Accreditation Forum</div>
+      <div class="trust-logo">AICPA Certified Professionals</div>
+      <div class="trust-logo">CISA Certified Auditors</div>
+      <div class="trust-logo">CQI IRCA Recognised Trainers</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title" style="color:var(--white)">End-to-End <em>Compliance</em> Solutions</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,.52)">From gap analysis to certificate issuance — we walk with you through every phase of your certification journey. No consulting conflicts, no upsells — pure independent certification.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">📋</div>
+        <div class="service-name">ISO Certification</div>
+        <div class="service-desc">Independent, impartial third-party certification across QMS, EMS, ISMS, OHSMS, FSMS and more. Our auditors are accredited Lead Auditors with 10+ years of industry experience per domain.</div>
+        <div class="service-tags"><span class="service-tag">ISO 9001</span><span class="service-tag">ISO 14001</span><span class="service-tag">ISO 45001</span><span class="service-tag">ISO 27001</span><span class="service-tag">ISO 22000</span><span class="service-tag">ISO 37001</span></div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🔐</div>
+        <div class="service-name">Cybersecurity Compliance</div>
+        <div class="service-desc">Comprehensive compliance testing and certification for digital infrastructure. Our CISA and AICPA certified professionals handle everything from VAPT to full GDPR readiness assessment.</div>
+        <div class="service-tags"><span class="service-tag">SOC 2</span><span class="service-tag">HIPAA</span><span class="service-tag">GDPR</span><span class="service-tag">NIST CSF</span><span class="service-tag">VAPT</span></div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">📈</div>
+        <div class="service-name">Training Programmes</div>
+        <div class="service-desc">Accredited Lead Auditor and Internal Auditor courses, Six Sigma, Lean and Agile training. Online and on-site delivery by practising auditors with real-world audit experience across 30+ countries.</div>
+        <div class="service-tags"><span class="service-tag">Lead Auditor</span><span class="service-tag">Six Sigma</span><span class="service-tag">Lean</span><span class="service-tag">Agile</span><span class="service-tag">CMMi</span></div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">🤝</div>
+        <div class="service-name">Franchise &amp; Partnership</div>
+        <div class="service-desc">Become a GCPL-authorised certification partner in your country or region. Full technical support, brand licensing and audit back-office provided. Active opportunities in Gulf, Africa and SE Asia.</div>
+        <div class="service-tags"><span class="service-tag">Gulf</span><span class="service-tag">Africa</span><span class="service-tag">Europe</span><span class="service-tag">Americas</span></div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">🔍</div>
+        <div class="service-name">Gap Analysis &amp; Pre-Audit</div>
+        <div class="service-desc">Not ready for full certification yet? Our experienced auditors conduct a detailed gap analysis of your existing systems against the target standard, giving you a clear, actionable roadmap to compliance.</div>
+        <div class="service-tags"><span class="service-tag">QMS Review</span><span class="service-tag">Readiness Audit</span><span class="service-tag">Roadmap</span></div>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">🌐</div>
+        <div class="service-name">Multi-Standard Certification</div>
+        <div class="service-desc">Achieve multiple ISO standards in a single integrated audit cycle. Save time and cost — our auditors are cross-trained across all major management system standards for efficient combined audits.</div>
+        <div class="service-tags"><span class="service-tag">Integrated Audit</span><span class="service-tag">IMS</span><span class="service-tag">Cost Efficient</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="certs-header reveal">
+      <div>
+        <div class="section-label">Standards We Certify</div>
+        <h2 class="section-title">Find Your <em>Certification</em></h2>
+      </div>
+      <button class="btn-primary" onclick="scroll2('contact')">Check Eligibility &rarr;</button>
+    </div>
+    <div class="cert-tabs" id="certTabs">
+      <div class="cert-tab active" onclick="filterCerts('all',this)">All Standards</div>
+      <div class="cert-tab" onclick="filterCerts('quality',this)">Quality</div>
+      <div class="cert-tab" onclick="filterCerts('safety',this)">Safety &amp; Environment</div>
+      <div class="cert-tab" onclick="filterCerts('security',this)">Security &amp; IT</div>
+      <div class="cert-tab" onclick="filterCerts('food',this)">Food &amp; Healthcare</div>
+    </div>
+    <div class="certs-grid" id="certsGrid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Certification in <em>6 Simple Steps</em></h2>
+      <p class="section-desc" style="color:var(--text2)">A transparent, structured process — from your first enquiry to receiving an internationally recognised certificate. Fully remote options available for all stages.</p>
+    </div>
+    <div class="process-wrap reveal">
+      <div class="process-steps" style="position:relative">
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-name">Enquiry</div>
+          <div class="step-desc">Submit details. Our team calls you within 24 hours to understand your scope and goals.</div>
+          <span class="step-days">Day 1</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-name">Quotation</div>
+          <div class="step-desc">Transparent fixed-price quote based on organisation size, scope and standard.</div>
+          <span class="step-days">Day 2&ndash;3</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-name">Stage 1 Audit</div>
+          <div class="step-desc">Document review. Auditors assess your management system documentation remotely.</div>
+          <span class="step-days">Week 2</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-name">Stage 2 Audit</div>
+          <div class="step-desc">On-site or remote audit of your implemented system. Detailed audit report issued.</div>
+          <span class="step-days">Week 4</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">5</div>
+          <div class="step-name">Certification</div>
+          <div class="step-desc">Certificate issued with full UAF/IAF accreditation markings on successful completion.</div>
+          <span class="step-days">Week 5</span>
+        </div>
+        <div class="process-step">
+          <div class="step-num">6</div>
+          <div class="step-name">Surveillance</div>
+          <div class="step-desc">Annual surveillance audits keep your certificate valid and your system improving.</div>
+          <span class="step-days">Year 1&ndash;3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL -->
+<section id="global">
+  <div class="section-inner">
+    <div class="globe-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-label">Global Presence</div>
+          <h2 class="section-title">Certifying Organisations <em>Worldwide</em></h2>
+          <p class="section-desc">Our UAF accreditation is recognised under the IAF Multilateral Recognition Arrangement (MLA), making every GCPL certificate valid and accepted in 100+ countries — no re-certification required when you expand markets.</p>
+        </div>
+        <div class="regions-list reveal">
+          <div class="region-item"><div class="region-flag">🇸🇦</div><div class="region-info"><div class="region-name">Gulf &amp; Middle East</div><div class="region-detail">UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman</div></div><div class="region-count">80+</div></div>
+          <div class="region-item"><div class="region-flag">🇬🇧</div><div class="region-info"><div class="region-name">Europe</div><div class="region-detail">UK, Germany, Netherlands, France, Spain, Scandinavia</div></div><div class="region-count">60+</div></div>
+          <div class="region-item"><div class="region-flag">🇺🇸</div><div class="region-info"><div class="region-name">Americas</div><div class="region-detail">USA, Canada, Brazil, Mexico, Colombia</div></div><div class="region-count">45+</div></div>
+          <div class="region-item"><div class="region-flag">🌏</div><div class="region-info"><div class="region-name">Asia &amp; Africa</div><div class="region-detail">India, SE Asia, East Africa, South Africa</div></div><div class="region-count">200+</div></div>
+        </div>
+      </div>
+      <div class="globe-visual-wrap">
+        <svg viewBox="0 0 320 320" width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="globeGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(201,151,44,0.08)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <circle cx="160" cy="160" r="130" fill="url(#globeGrad)" stroke="rgba(201,151,44,0.14)" stroke-width="1"/>
+          <circle cx="160" cy="160" r="90" fill="none" stroke="rgba(201,151,44,0.09)" stroke-width="1"/>
+          <circle cx="160" cy="160" r="50" fill="none" stroke="rgba(201,151,44,0.07)" stroke-width="1"/>
+          <ellipse cx="160" cy="160" rx="130" ry="44" fill="none" stroke="rgba(201,151,44,0.07)" stroke-width="1"/>
+          <ellipse cx="160" cy="160" rx="130" ry="88" fill="none" stroke="rgba(201,151,44,0.06)" stroke-width="1"/>
+          <line x1="30" y1="160" x2="290" y2="160" stroke="rgba(201,151,44,0.07)" stroke-width="1"/>
+          <line x1="160" y1="30" x2="160" y2="290" stroke="rgba(201,151,44,0.07)" stroke-width="1"/>
+          <!-- Gulf -->
+          <circle cx="205" cy="140" r="6" fill="#c9972c" opacity=".95"><animate attributeName="opacity" values=".95;.4;.95" dur="2s" repeatCount="indefinite"/></circle>
+          <circle cx="205" cy="140" r="12" fill="none" stroke="#c9972c" stroke-width="1" opacity=".35"><animate attributeName="r" values="8;16;8" dur="2s" repeatCount="indefinite"/></circle>
+          <!-- Europe -->
+          <circle cx="130" cy="110" r="5" fill="#c9972c" opacity=".8"><animate attributeName="opacity" values=".8;.3;.8" dur="2.5s" repeatCount="indefinite"/></circle>
+          <circle cx="130" cy="110" r="10" fill="none" stroke="#c9972c" stroke-width="1" opacity=".25"><animate attributeName="r" values="7;14;7" dur="2.5s" repeatCount="indefinite"/></circle>
+          <!-- Americas -->
+          <circle cx="88" cy="150" r="5" fill="#2ecc71" opacity=".85"><animate attributeName="opacity" values=".85;.3;.85" dur="2.8s" repeatCount="indefinite"/></circle>
+          <!-- India -->
+          <circle cx="210" cy="165" r="4" fill="#e8b84b" opacity=".8"><animate attributeName="opacity" values=".8;.3;.8" dur="1.9s" repeatCount="indefinite"/></circle>
+          <!-- Africa -->
+          <circle cx="158" cy="180" r="4" fill="#2ecc71" opacity=".7"><animate attributeName="opacity" values=".7;.25;.7" dur="3.1s" repeatCount="indefinite"/></circle>
+          <!-- SE Asia -->
+          <circle cx="240" cy="175" r="3" fill="#e8b84b" opacity=".65"><animate attributeName="opacity" values=".65;.2;.65" dur="2.3s" repeatCount="indefinite"/></circle>
+          <!-- Centre G -->
+          <text x="160" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Cormorant Garamond,serif" font-size="48" font-weight="700" fill="rgba(201,151,44,0.1)">G</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">Client Stories</div>
+      <h2 class="section-title">Trusted by Organisations <em>Across the Globe</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="t-quote">The GCPL team made our ISO 9001 journey remarkably smooth. Thorough, professional auditors who were genuinely committed to helping us succeed — not just issuing a certificate.</div>
+        <div class="t-author"><div class="t-avatar">AS</div><div><div class="t-name">Ahmed Al-Sayed</div><div class="t-company">VP Operations &middot; Riyadh, Saudi Arabia</div></div><div class="t-cert">ISO 9001</div></div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="t-quote">We needed a body that understood GDPR alongside ISO 27001. GCPL's cybersecurity expertise is exceptional — they helped us address real security gaps, not just paperwork compliance.</div>
+        <div class="t-author"><div class="t-avatar">MV</div><div><div class="t-name">Martina Vogt</div><div class="t-company">CISO &middot; Hamburg, Germany</div></div><div class="t-cert">ISO 27001</div></div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="t-quote">As an SME entering US markets, ISO certification was non-negotiable for procurement. GCPL offered the best pricing I found for a fully accredited body — and delivered ahead of schedule.</div>
+        <div class="t-author"><div class="t-avatar">RC</div><div><div class="t-name">Rafael Cardoso</div><div class="t-company">CEO &middot; S&atilde;o Paulo, Brazil</div></div><div class="t-cert">ISO 9001 + 14001</div></div>
+      </div>
+    </div>
+    <div class="stats-row reveal">
+      <div class="stat-big"><div class="stat-big-num">500+</div><div class="stat-big-label">Certified Organisations</div></div>
+      <div class="stat-vline"></div>
+      <div class="stat-big"><div class="stat-big-num">14+</div><div class="stat-big-label">Years Active</div></div>
+      <div class="stat-vline"></div>
+      <div class="stat-big"><div class="stat-big-num">30+</div><div class="stat-big-label">Countries</div></div>
+      <div class="stat-vline"></div>
+      <div class="stat-big"><div class="stat-big-num">98%</div><div class="stat-big-label">First-Pass Success</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AI ADVISOR -->
+<section id="ai-advisor">
+  <div class="section-inner ai-inner">
+    <div class="ai-header reveal">
+      <div class="section-label" style="text-align:center">AI Certification Advisor</div>
+      <h2 class="section-title" style="text-align:center;color:var(--white)">Not Sure Which<br><em>Certification You Need?</em></h2>
+      <p class="section-desc" style="text-align:center;color:rgba(255,255,255,.52);margin:12px auto 0">Ask our AI advisor — trained on GCPL's services, standards catalogue and compliance requirements. Instant answers, 24/7.</p>
+    </div>
+    <div class="chat-container reveal">
+      <div class="chat-topbar">
+        <div class="chat-live-dot"></div>
+        <div class="chat-label">GCPL Certification Advisor</div>
+        <div class="chat-sublabel">Powered by AI &middot; Always online</div>
+      </div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="msg ai">Hello! I'm GCPL's AI Certification Advisor. I can help you understand which certifications your business needs, explain the process, timelines and costs — and connect you to our expert team when you're ready. <strong>What brings you here today?</strong></div>
+      </div>
+      <div class="quick-btns" id="quickBtns">
+        <div class="quick-btn" onclick="quickSend(this)">Which ISO do I need?</div>
+        <div class="quick-btn" onclick="quickSend(this)">How long does it take?</div>
+        <div class="quick-btn" onclick="quickSend(this)">Is GCPL globally recognised?</div>
+        <div class="quick-btn" onclick="quickSend(this)">I need SOC 2 compliance</div>
+        <div class="quick-btn" onclick="quickSend(this)">Gulf / Middle East requirements</div>
+        <div class="quick-btn" onclick="quickSend(this)">What does it cost?</div>
+      </div>
+      <div class="chat-input-row">
+        <input class="chat-input" id="chatInput" placeholder="Ask about certifications, timelines, compliance standards..." onkeydown="if(event.key==='Enter')sendMsg()">
+        <button class="chat-send" onclick="sendMsg()">Send &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / LEAD -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="lead-grid">
+      <div class="lead-left reveal">
+        <div class="section-label">Get Certified</div>
+        <h2 class="section-title">Start Your<br><em>Certification</em><br>Journey Today</h2>
+        <p class="section-desc">Our team responds within 24 hours with a tailored quote. No obligation — just expert guidance from certified auditors who have done this hundreds of times.</p>
+        <div class="lead-perks">
+          <div class="lead-perk"><div class="perk-icon">&#9889;</div><div class="perk-text"><strong>Response within 24 hours</strong>A senior auditor personally reviews every enquiry.</div></div>
+          <div class="lead-perk"><div class="perk-icon">&#128202;</div><div class="perk-text"><strong>Free gap analysis overview</strong>Initial readiness assessment included, at no cost.</div></div>
+          <div class="lead-perk"><div class="perk-icon">&#127758;</div><div class="perk-text"><strong>Remote audit available</strong>Serving Gulf, Europe and Americas without travel barriers.</div></div>
+          <div class="lead-perk"><div class="perk-icon">&#127885;</div><div class="perk-text"><strong>UAF accredited certificate</strong>Internationally recognised under IAF MLA in 100+ countries.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form reveal" id="contactForm">
+          <div class="form-title">Request a Free Quote</div>
+          <div class="form-subtitle">No commitment required &middot; Response within 24 hours</div>
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" id="f_first" placeholder="John"></div>
+            <div class="form-group"><label>Last Name</label><input type="text" id="f_last" placeholder="Smith"></div>
+          </div>
+          <div class="form-group"><label>Business Email</label><input type="email" id="f_email" placeholder="john@company.com"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Company Name</label><input type="text" id="f_company" placeholder="Acme Corp"></div>
+            <div class="form-group"><label>Country</label>
+              <select id="f_country">
+                <option value="">Select country...</option>
+                <option>Saudi Arabia</option><option>UAE</option><option>Qatar</option><option>Kuwait</option><option>Bahrain</option><option>Oman</option>
+                <option>United Kingdom</option><option>Germany</option><option>Netherlands</option><option>France</option><option>Italy</option><option>Spain</option>
+                <option>USA</option><option>Canada</option><option>Brazil</option><option>Mexico</option>
+                <option>India</option><option>Singapore</option><option>Australia</option><option>South Africa</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label>Certification Required</label>
+            <select id="f_cert">
+              <option value="">Select certification...</option>
+              <option>ISO 9001 &mdash; Quality Management</option>
+              <option>ISO 14001 &mdash; Environmental Management</option>
+              <option>ISO 45001 &mdash; Health &amp; Safety</option>
+              <option>ISO 27001 &mdash; Information Security</option>
+              <option>ISO 22000 &mdash; Food Safety</option>
+              <option>ISO 37001 &mdash; Anti-Bribery</option>
+              <option>ISO 50001 &mdash; Energy Management</option>
+              <option>ISO 13485 &mdash; Medical Devices</option>
+              <option>SOC 2</option>
+              <option>HIPAA</option>
+              <option>GDPR Compliance</option>
+              <option>NIST CSF</option>
+              <option>Multiple / Integrated</option>
+              <option>Not sure &mdash; need guidance</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Organisation Size</label>
+            <select id="f_size">
+              <option value="">Select size...</option>
+              <option>1&ndash;10 employees</option>
+              <option>11&ndash;50 employees</option>
+              <option>51&ndash;250 employees</option>
+              <option>251&ndash;1000 employees</option>
+              <option>1000+ employees</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Tell us your goals (optional)</label>
+            <textarea id="f_message" placeholder="E.g. We're a manufacturer in UAE targeting ISO 9001 to qualify for government tenders..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Request Free Consultation &rarr;</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">&#9989;</div>
+          <div class="success-title">Enquiry Received!</div>
+          <p class="success-text">Thank you. A GCPL senior auditor will contact you at <strong id="successEmail"></strong> within 24 business hours with your tailored certification roadmap and a detailed quote.</p>
+          <p class="success-text" style="margin-top:14px;font-size:12px;opacity:.7">In the meantime, our AI advisor above is available 24/7 for any questions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+          <div class="logo-icon">G</div>
+          <span class="footer-brand-name" style="margin-bottom:0">Globus Certifications</span>
+        </div>
+        <p class="footer-desc">An independent, UAF-accredited certification body established in 2009. Providing internationally recognised ISO certification, cybersecurity compliance and professional training to organisations in 30+ countries.</p>
+        <div class="footer-accred-badge"><span>&#127885; UAF Accredited &middot; IAF Member</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Certifications</h4>
+        <div class="footer-links">
+          <a onclick="scroll2('certifications')">ISO 9001:2015</a>
+          <a onclick="scroll2('certifications')">ISO 14001:2015</a>
+          <a onclick="scroll2('certifications')">ISO 45001:2018</a>
+          <a onclick="scroll2('certifications')">ISO 27001:2022</a>
+          <a onclick="scroll2('certifications')">ISO 22000:2018</a>
+          <a onclick="scroll2('certifications')">SOC 2 / HIPAA</a>
+          <a onclick="scroll2('certifications')">GDPR / NIST CSF</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a>About GCPL</a>
+          <a>Our Auditors</a>
+          <a>Accreditation</a>
+          <a>Franchise Opportunities</a>
+          <a>Training Calendar</a>
+          <a>Case Studies</a>
+          <a>Blog / Resources</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a>&#128205; New Delhi, India</a>
+          <a href="tel:+919868476771">&#128222; +91-90448 00033</a>
+          <a href="mailto:info@gcert.co">&#9993;&#65039; info@gcert.co</a>
+          <a href="http://gcert.co" target="_blank">&#127760; gcert.co</a>
+          <a style="margin-top:8px;opacity:.5;cursor:default">Gulf enquiries via WhatsApp</a>
+          <a style="opacity:.5;cursor:default">UK entity available for Europe</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 Globus Certifications Pvt. Ltd. All rights reserved. UAF Accredited Certification Body. Registered in India.</div>
+      <div class="footer-bottom-links">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ELEMENTS -->
+<div class="float-cta">
+  <div class="float-tooltip">Ask our AI advisor</div>
+  <button class="float-chat-btn" onclick="scroll2('ai-advisor')" title="AI Advisor">&#128172;</button>
+</div>
+<button class="whatsapp-fab" onclick="window.open('https://wa.me/919868476771?text=Hello%20GCPL%2C%20I%20am%20interested%20in%20ISO%20certification%20services.%20Please%20guide%20me.','_blank')">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.531 5.843L.057 23.716a.5.5 0 0 0 .613.637l5.999-1.573A11.947 11.947 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.943 0-3.771-.521-5.347-1.432l-.383-.225-3.965 1.039 1.057-3.857-.249-.396A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  WhatsApp Us
+</button>
+
+<script>
+// ── UTILS ──
+function scroll2(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function toggleMenu(){
+  var m=document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+}
+
+// ── COUNTERS ──
+function animateNum(el,target,suffix){
+  var start=0,inc=target/55,t=setInterval(function(){
+    start=Math.min(start+inc,target);
+    el.textContent=Math.floor(start)+suffix;
+    if(start>=target)clearInterval(t);
+  },22);
+}
+setTimeout(function(){
+  animateNum(document.getElementById('c1'),500,'+');
+  animateNum(document.getElementById('c2'),30,'+');
+  animateNum(document.getElementById('c3'),14,'+');
+},900);
+
+// ── SCROLL REVEAL ──
+var revealEls=document.querySelectorAll('.reveal');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+  });
+},{threshold:0.1});
+revealEls.forEach(function(r){obs.observe(r);});
+
+// ── CERTIFICATIONS DATA ──
+var certs=[
+  {code:'ISO 9001',name:'Quality Management System',cat:'quality',industries:['Manufacturing','Services','Construction','Healthcare'],time:'6&ndash;10 wks'},
+  {code:'ISO 14001',name:'Environmental Management System',cat:'safety',industries:['Manufacturing','Energy','Construction','Logistics'],time:'8&ndash;12 wks'},
+  {code:'ISO 45001',name:'Occupational Health &amp; Safety',cat:'safety',industries:['Construction','Mining','Oil &amp; Gas','Healthcare'],time:'8&ndash;12 wks'},
+  {code:'ISO 27001',name:'Information Security Management',cat:'security',industries:['IT / SaaS','Finance','Healthcare','Telecom'],time:'10&ndash;16 wks'},
+  {code:'ISO 22000',name:'Food Safety Management System',cat:'food',industries:['Food &amp; Bev','Retail','Hospitality','Pharma'],time:'8&ndash;14 wks'},
+  {code:'ISO 37001',name:'Anti-Bribery Management System',cat:'quality',industries:['Government','Finance','Oil &amp; Gas','NGO'],time:'10&ndash;14 wks'},
+  {code:'ISO 50001',name:'Energy Management System',cat:'safety',industries:['Manufacturing','Energy','Real Estate'],time:'10&ndash;14 wks'},
+  {code:'ISO 13485',name:'Medical Devices QMS',cat:'food',industries:['Healthcare','Medical Devices','Pharma'],time:'12&ndash;18 wks'},
+  {code:'SOC 2',name:'Service Organisation Control',cat:'security',industries:['SaaS','Cloud','IT Services','Fintech'],time:'12&ndash;20 wks'},
+  {code:'HIPAA',name:'Health Information Privacy',cat:'food',industries:['Healthcare','Health IT','Insurers'],time:'10&ndash;16 wks'},
+  {code:'GDPR',name:'Data Protection Compliance',cat:'security',industries:['All Sectors','EU / UK Operations'],time:'8&ndash;14 wks'},
+  {code:'NIST CSF',name:'Cybersecurity Framework',cat:'security',industries:['Government','Finance','Critical Infra'],time:'10&ndash;16 wks'},
+  {code:'ISO 17025',name:'Testing &amp; Calibration Labs',cat:'quality',industries:['Laboratories','R&amp;D','Testing Bodies'],time:'12&ndash;18 wks'},
+  {code:'CE Marking',name:'European Conformity',cat:'safety',industries:['Manufacturing','Electronics','Medical Devices'],time:'8&ndash;16 wks'},
+];
+function renderCerts(cat){
+  var filtered=cat==='all'?certs:certs.filter(function(c){return c.cat===cat;});
+  document.getElementById('certsGrid').innerHTML=filtered.map(function(c){
+    return '<div class="cert-card" onclick="scroll2(\'contact\')">'
+      +'<div class="cert-card-time"><strong>'+c.time+'</strong>Timeline</div>'
+      +'<div class="cert-card-code">'+c.code+'</div>'
+      +'<div class="cert-card-name">'+c.name+'</div>'
+      +'<div class="cert-card-industries">'+c.industries.map(function(i){return '<span class="cert-card-ind">'+i+'</span>';}).join('')+'</div>'
+      +'</div>';
+  }).join('');
+}
+renderCerts('all');
+function filterCerts(cat,el){
+  document.querySelectorAll('.cert-tab').forEach(function(t){t.classList.remove('active');});
+  el.classList.add('active');
+  renderCerts(cat);
+}
+
+// ── AI CHAT ──
+var qaKB=[
+  {keys:['which','need','require','right','what cert','recommend'],ans:'Great question! The right certification depends on your industry and goals. Here are the most common matches:<br><br><ul><li><strong>ISO 9001</strong> — Quality management; suits almost any sector, required for most government tenders globally</li><li><strong>ISO 27001</strong> — If you handle customer data, operate IT/SaaS, or need to win enterprise contracts</li><li><strong>ISO 45001</strong> — Mandatory for construction, oil &amp; gas, and manufacturing in most Gulf states</li><li><strong>ISO 14001</strong> — If your operations have environmental impact; often bundled with 9001</li><li><strong>SOC 2 / HIPAA</strong> — For US market tech or healthcare compliance</li></ul><br>Tell me your industry and country and I\'ll give a specific recommendation!'},
+  {keys:['long','time','week','month','fast','quick','duration','timeline','how long'],ans:'Timelines vary by certification and organisation size:<br><br><ul><li><strong>ISO 9001 / 14001 / 45001</strong>: 6&ndash;12 weeks</li><li><strong>ISO 27001</strong>: 10&ndash;16 weeks</li><li><strong>ISO 22000 / 13485</strong>: 8&ndash;16 weeks</li><li><strong>SOC 2</strong>: 12&ndash;20 weeks</li><li><strong>Multi-standard integrated</strong>: Add ~20% to the longest standard</li></ul><br>If you already have documented processes, we often move faster. Remote audits also reduce scheduling delays significantly. Want a more precise estimate?'},
+  {keys:['accredit','recogni','valid','accept','trust','iaf','uaf','global','international','worldwide'],ans:'Absolutely yes. GCPL is accredited by <strong>UAF (United Accreditation Foundation)</strong>, which is a full member of the <strong>IAF (International Accreditation Forum)</strong>.<br><br>This means our certificates carry the <strong>IAF MLA mark</strong> — making them recognised in <strong>100+ countries</strong> including all GCC states, the full EU/UK, USA, Canada, Australia and more.<br><br>You can verify our accreditation live on the UAF directory at uafaccreditation.org. Our certificate number is listed there publicly.'},
+  {keys:['soc','soc2','hipaa','gdpr','nist','vapt','cyber','security','data','it compliance'],ans:'GCPL offers a full suite of cybersecurity compliance services:<br><br><ul><li><strong>SOC 2 Type I &amp; II</strong> — For SaaS and cloud providers targeting US enterprise clients</li><li><strong>HIPAA</strong> — For healthcare organisations handling protected health information</li><li><strong>GDPR</strong> — For businesses operating in or serving EU/UK markets</li><li><strong>NIST CSF</strong> — For critical infrastructure and US government contractors</li><li><strong>VAPT</strong> — Vulnerability Assessment &amp; Penetration Testing</li></ul><br>Our auditors hold <strong>CISA and AICPA certifications</strong>. Ready to discuss your specific requirements?'},
+  {keys:['gulf','middle east','saudi','uae','dubai','qatar','oman','bahrain','kuwait','gcc'],ans:'We have extensive experience serving organisations across the GCC. GCPL certificates are <strong>recognised by Saudi Aramco, ADNOC</strong> supply chains and government procurement bodies across all GCC states.<br><br>Our remote audit capability means we can complete Stage 1 remotely and coordinate Stage 2 efficiently. We also have <strong>Arabic-speaking documentation support</strong> available.<br><br>Gulf clients most commonly pursue:<ul><li>ISO 9001 (government tender qualification)</li><li>ISO 45001 (mandatory for construction / oil &amp; gas)</li><li>ISO 14001 (environmental compliance)</li></ul><br>WhatsApp us directly for fastest response: +91-90448 00033'},
+  {keys:['cost','price','fee','cheap','expensive','afford','budget','quote','how much'],ans:'GCPL provides <strong>transparent fixed-price quotes</strong> — no surprise fees or add-ons. Pricing is based on:<br><br><ul><li>Organisation size (employee count)</li><li>Number of sites / locations</li><li>Certification standard(s) chosen</li><li>Audit duration required by the standard</li></ul><br>As a <strong>direct certification body</strong> (not a broker or reseller), our fees are significantly more competitive than many intermediaries.<br><br>SMEs and single-site organisations typically receive very competitive rates. Fill in the free quote form below — you\'ll receive a detailed, itemised proposal within 24 hours!'},
+  {keys:['train','course','learn','auditor','six sigma','lean','agile','cmmi','cqi','irca'],ans:'GCPL runs accredited training programmes year-round — available online and on-site:<br><br><ul><li><strong>Lead Auditor Courses</strong> — ISO 9001, 14001, 45001, 27001 (CQI IRCA recognised)</li><li><strong>Internal Auditor Courses</strong> — All major standards</li><li><strong>Six Sigma</strong> — Yellow Belt, Green Belt, Black Belt</li><li><strong>Lean Management</strong> — Foundation and Practitioner</li><li><strong>Agile &amp; CMMi</strong> — For software and IT organisations</li></ul><br>All trainers are practising Lead Auditors with 10+ years of real audit experience. Contact us for the next available training schedule!'},
+  {keys:['europe','uk','germany','france','netherlands','italy','spain','eu'],ans:'GCPL actively serves European organisations with fully remote audit capability. Our IAF MLA-marked certificates are accepted across all EU member states and the UK.<br><br>We have supported clients in:<ul><li>UK (manufacturing, IT services)</li><li>Germany (engineering, automotive supply chain)</li><li>Netherlands (logistics, distribution)</li><li>France, Spain, Italy (SMEs and mid-market)</li></ul><br>GDPR compliance combined with ISO 27001 is the most popular package for EU clients. Contact us for a tailored quote!'},
+  {keys:['america','usa','us','canada','brazil','mexico','united states'],ans:'GCPL serves organisations across North and South America. Our UAF/IAF-accredited certificates are accepted by US buyers and procurement systems.<br><br>Common US/Americas focus areas:<ul><li><strong>SOC 2</strong> — Essential for any B2B SaaS or cloud provider selling to US enterprises</li><li><strong>ISO 9001</strong> — Required for many manufacturing and government supplier qualifications</li><li><strong>HIPAA</strong> — Mandatory for US healthcare and health IT</li><li><strong>NIST CSF</strong> — For federal contractor compliance</li></ul><br>All audits can be conducted remotely, making time zones our only minor coordination challenge!'},
+];
+function getReply(input){
+  var lower=input.toLowerCase();
+  for(var i=0;i<qaKB.length;i++){
+    if(qaKB[i].keys.some(function(k){return lower.indexOf(k)>-1;}))return qaKB[i].ans;
+  }
+  return 'Thank you for asking about <strong>"'+input.substring(0,60)+'"</strong>.<br><br>This is a great topic to explore with one of our senior auditors who have 14+ years of hands-on experience across all major certification standards.<br><br>For the most accurate guidance, I\'d recommend:<ul><li>Filling in our <strong>free consultation form</strong> below (24-hour response)</li><li>Or reach us directly on <strong>WhatsApp: +91-90448 00033</strong> for an immediate conversation</li></ul><br>We\'ll match you with an auditor who specialises in your industry and target standard.';
+}
+function addMsg(html,type){
+  var d=document.createElement('div');
+  d.className='msg '+type;
+  d.innerHTML=html;
+  var cm=document.getElementById('chatMessages');
+  cm.appendChild(d);
+  cm.scrollTop=cm.scrollHeight;
+}
+function showTyping(){
+  var d=document.createElement('div');
+  d.className='typing-indicator';
+  d.id='typing';
+  d.innerHTML='<div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>';
+  var cm=document.getElementById('chatMessages');
+  cm.appendChild(d);
+  cm.scrollTop=cm.scrollHeight;
+}
+function sendMsg(){
+  var inp=document.getElementById('chatInput');
+  var txt=inp.value.trim();
+  if(!txt)return;
+  addMsg(txt,'user');
+  inp.value='';
+  document.getElementById('quickBtns').style.display='none';
+  showTyping();
+  var delay=900+Math.random()*700;
+  setTimeout(function(){
+    var t=document.getElementById('typing');
+    if(t)t.remove();
+    addMsg(getReply(txt),'ai');
+  },delay);
+}
+function quickSend(el){
+  document.getElementById('chatInput').value=el.textContent;
+  sendMsg();
+}
+
+// ── FORM SUBMIT ──
+function submitForm(){
+  var first=document.getElementById('f_first').value.trim();
+  var email=document.getElementById('f_email').value.trim();
+  if(!first){alert('Please enter your first name.');return;}
+  if(!email||email.indexOf('@')<0){alert('Please enter a valid email address.');return;}
+  document.getElementById('contactForm').style.display='none';
+  var s=document.getElementById('formSuccess');
+  s.style.display='block';
+  document.getElementById('successEmail').textContent=email;
+}
+</script>
+</body>
+</html>
